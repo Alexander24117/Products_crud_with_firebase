@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Productos</string>
+    <string name="MainTitle">Tienda Universidad de Ibagué</string>
+    <string name="Acerca">Acerca De ....</string>
+    <string name="Instru">Instrucciones</string>
+    <string name="BtnIn">Ingresar a la Tienda</string>
+
+    <string name="MenuTitle">Menu Principal</string>
+    <string name="BtnBuscar">Buscar Producto</string>
+    <string name="BtnAdd">Agregar Producto</string>
+    <string name="BtnAdd1">Agregar En Archivo</string>
+    <string name="BtnListar">Listar Productos</string>
+    <string name="BtnModificar">Modificar Producto</string>
+    <string name="BtnEliminar">Eliminar Producto</string>
+    <string name="BtnGrafica">Gráfica</string>
+
+    <string name="titleAdd">Agregar Nuevo Producto</string>
+    <string name="titleCode">Código del Producto</string>
+    <string name="titleName">Nombre del Producto</string>
+    <string name="titleCategory">Categoria del Producto</string>
+    <string name="titlePrecioC">Precio de Compra</string>
+    <string name="titleIva">IVA</string>
+    <string name="titlePRecioV">Precio de Venta</string>
+    <string name="titleFechaV">Fecha de Vencimiento del Producto</string>
+    <string name="titleCantidad">Cantidad de Productos</string>
+    <string name="btnAgregar">Agregar Nuevo Producto</string>
+    <string name="title_activity_g_u_i_producto">GUIProducto</string>
+    <string name="nombreArchivo">datos.txt</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

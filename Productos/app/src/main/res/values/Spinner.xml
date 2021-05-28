@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Categoria">
+        <item>Seleccionar una Categoría</item>
+        <item>Aseo Corporal</item>
+        <item>Aseo Hogar</item>
+        <item>Comida Empaquetada</item>
+        <item>Comida Enlatada</item>
+        <item>Frutas</item>
+        <item>Utiles Escolares</item>
+        <item>Verduras</item>
+        <item>Otros</item>
+    </string-array>
+</resources>

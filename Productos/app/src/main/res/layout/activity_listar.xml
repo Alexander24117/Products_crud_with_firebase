@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/txtListaS"
+        android:layout_width="395dp"
+        android:layout_height="466dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="58dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="1dp"
+        android:onClick="cargarPorEstados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageLis"
+        app:layout_constraintTop_toBottomOf="@+id/busqueda"
+        app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+    <ImageView
+        android:id="@+id/imageLis"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="294dp"
+        android:onClick="cargar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busqueda"
+        app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/busqueda"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5"
+        app:queryHint="Buscar Estado">
+
+    </androidx.appcompat.widget.SearchView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

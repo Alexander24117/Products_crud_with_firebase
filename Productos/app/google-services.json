@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856733642534",
+    "project_id": "appbdproductos",
+    "storage_bucket": "appbdproductos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856733642534:android:cf11df7f6b3c3836855be7",
+        "android_client_info": {
+          "package_name": "com.example.productos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856733642534-1olrvd3vi7297uj4055upnoftvavs4rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5z2m2YrCO5_lA7yfEr9HnRDJK_6AqStY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856733642534-1olrvd3vi7297uj4055upnoftvavs4rl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

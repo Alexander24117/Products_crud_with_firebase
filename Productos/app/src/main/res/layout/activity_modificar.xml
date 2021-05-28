@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modificar">
+
+    <TextView
+        android:id="@+id/txtBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="165dp"
+        android:text="Buscar"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtAmod"
+        app:layout_constraintEnd_toStartOf="@+id/imageBusqueda2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
+
+    <ImageView
+        android:id="@+id/imageBusqueda2"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="btnBuscarOnclick"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambPrecC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <EditText
+        android:id="@+id/txtCambPrecC"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Precio de compra"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambCat"
+        app:layout_constraintStart_toEndOf="@+id/txtCambnom" />
+
+    <EditText
+        android:id="@+id/txtCambIva"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="IVA"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambFecha"
+        app:layout_constraintEnd_toStartOf="@+id/txtCambprecV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCambcant"
+        android:layout_width="125dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCambFecha"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Fecha de vencimiento"
+        android:inputType="date"
+        android:onClick="fechaOnClick"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambcant"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCambnom"
+        android:layout_width="120dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambCat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/txtCambCat"
+        android:layout_width="205dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="18dp"
+        android:entries="@array/Categoria"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambprecV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCambprecV"
+        android:layout_width="137dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Precio de venta"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambFecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCambIva" />
+
+    <EditText
+        android:id="@+id/txtAmod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="Codigo"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtCambnom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBB" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:onClick="actualizar"
+        app:layout_constraintBottom_toTopOf="@+id/txtM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCambcant"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/txtM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCambcant"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
